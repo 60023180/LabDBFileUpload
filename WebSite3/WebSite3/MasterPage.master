@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 295px;
+            height: 27px;
+        }
+        .auto-style10 {
+            height: 27px;
+        }
+        .auto-style11 {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style11" colspan="2" style="background-color: #0000FF; color: #FFFFFF">Header</td>
+            </tr>
+            <tr>
+                <td class="auto-style2" style="background-color: #800000; color: #FFFFFF">Menu<br />
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Calendar.aspx">เพิ่ม</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server">HyperLink</asp:HyperLink>
+                </td>
+                <td class="auto-style10">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style10" colspan="2" style="color: #FFFFFF; background-color: #008000">Foder</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
